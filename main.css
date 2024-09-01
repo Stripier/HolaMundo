@@ -1,0 +1,29 @@
+body {
+    background-color: #eee;
+
+}
+
+
+/*#parrafo Para agregar elementos CSS a elementos especificos id se utiliza el # y el nombre*/
+.caja {   /*Para agregar elementos CSS a las class se debe utilizar el . y el nombre de la clase*/
+    
+    /*Caracteristicas de la caja*/
+    height: 100px;
+    width: 100px;
+    background-color: #aaf;
+    
+    /*Caracteristicas del margin*/
+    margin: 8px;
+    /*Caracteristicas del border*/
+    border-style: solid; /**/
+    border-width: 8px;
+    border-color: #faa;
+    border-left: 6px solid  #afa;
+    border-radius: 8px;
+    
+    /*Caracteristicas del padding*/
+    padding: 8px;
+    
+    /*Caracteristicas del contenido*/
+    color: #575;
+}
