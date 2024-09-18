@@ -1,0 +1,27 @@
+body {
+    background-color: #eee;
+}
+
+p{
+    color: #222fff; /*Definir el color del texto*/
+    text-align: justify; /*Elegir la alineación del texto dentro del moedelo de caja*/
+    text-indent: 40px; /*Mover primera linea de un texto*/
+    line-height: 1; /*Indica separación entre cada una de las lineas o tamaño/altura de la misma */
+
+}
+
+a{
+    text-decoration: none ; /*Nos permitirá agregarle decoración al texto en html*/
+    /*text-decoration: underline ;
+    text-decoration: overline -> Linea Sobre
+    text-decoration: line-throught -> Tachar
+    text-decoration: underline   -> Linea debajo */
+
+    text-transform: capitalize ;  /*Definir si las letras van en mayusculas - minusculas - capitalizadas*/
+    /*text-transform: lowercase ;
+    text-transform: capitalize ;
+    text-transform: uppercase ;*/
+
+    letter-spacing: 3px ;  /*Genera una separación entre cad auna de las letras*/
+
+}
