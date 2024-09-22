@@ -3,10 +3,16 @@ body {
 }
 
 p{
+    font-family: "Times New Roman"; /*Indicar que tipo de letra (fuente) queremos tener*/
+    font-style: oblique ;  /*Estilo de fuente  (Italic, oblique,notmal)*/
+    font-size: 20px; /*Definir tamaño de letra en px*/
+    font-weight: 700 ; /*Definir el grosor de las letras [100 - 900], no todas las fguentes soportan todos los tamaños*/
     color: #222fff; /*Definir el color del texto*/
     text-align: justify; /*Elegir la alineación del texto dentro del moedelo de caja*/
     text-indent: 40px; /*Mover primera linea de un texto*/
     line-height: 1; /*Indica separación entre cada una de las lineas o tamaño/altura de la misma */
+    word-spacing: 10px ; /*Agrega espacio entre palabras*/
+    text-shadow: 10px 2px 5px rgba(0,0,0,0.3);  /*Agrega sombreado al texto   [Cuanto se mueve a la derecha][Cuanto se desplaza hacia abajo][Difuminado][Color]*/
 
 }
 
@@ -24,4 +30,105 @@ a{
 
     letter-spacing: 3px ;  /*Genera una separación entre cad auna de las letras*/
 
+    color: hotpink;
+    background-color: #f00;
+    border: solid 1px #d00;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    
+}
+a:link {   /*Diselño cuando el vincuklo no a sido visitado*/
+    color: pink;
+    text-decoration: none;
+}
+
+a:visited { /*Diseño cuando el vinculo ya fue visitado*/
+    color: white
+}
+
+a:hover{ /*Diseño cuando el selector(puntero) esta sobre el vinculo*/
+    color: white;
+    text-decoration: underline;
+    background-color: #f55;
+}
+
+a:active { /*Diseño cuando se hace click en el vinculo*/
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding-left: 0px;
+}
+
+li{
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}
+/*ul li{  /*Seleccionar elementos dentro de la lista no ordenada
+    list-style-type: upper-alpha;  /*Derfinir la forma del marcador de lista
+
+}*/
+
+table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;  /*Indicar que es lo que queremos que ocurra con los bordes dentro de la tabla*/
+}
+
+tr:nth-child(even){ /*Solo seleccionar algunos "hijos"*/
+    background-color: #f2f2f2;
+}
+
+td{
+    border: solid 1px #ddd;
+    padding: 8px;
+}
+
+table th{   /*Selector de cabecera de tabla*/
+    background-color:#4CAF50 ;
+    color: white;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+#p2{
+    max-width: 350px;   /*Limita el espacio que ocupa la caja del elemento*/
+    background-color: #f00;
+    margin: auto;
+    position: auto;
+    left: 15px;
+    right: 0px;
+    top: 20px;
+    bottom: 0px;
+}
+
+#over{
+    width: 100px;
+    height: 100px;
+    overflow: hidden; /*Permite seleccionar el comportamiento del texto cuando este sobrepasa la capacidad de la caja
+    overflow-y: hidden  Forzar el comportamiento en eje Y*/
+    overflow-x: scroll; /*Forzar el comportamiento en el eje X*/ 
+
+
+}
+
+img{
+    float: right;
+    opacity: 1;
+}
+img:hover{
+    opacity: 0.5;
+}
+
+div p {
+    color:#F00
 }
