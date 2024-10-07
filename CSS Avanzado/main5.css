@@ -1,0 +1,56 @@
+body{
+    background-color: #eee;
+}
+
+.fondo{
+    height: 400px;
+    background: green url('https://placedog.net/200/300') no-repeat left top fixed;
+    /*background-color: green;
+    background-image: url('https://placedog.net/200/300');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;*/
+    
+    
+    /*background-size: cover;
+    background-color: rgba(red, green, blue, alpha);
+    background-color: hsl(hue, saturation, lightness, alpha);
+    opacity: [0-1]; es equivalente al alpha pero afectando al elemento completo*/
+
+    /*Fondos con colores gradientes
+    
+    background-image: linear-gradient (angulo , color 1, color 2,...,color n) -> angulo: deg color 1 y color 2: rgba o hsl
+    background-image: repeating-linear-gradient (angulo , color 1 %, color 2 %,...,color n %) -> con repeating definimos a que % del espacio se limita cada color y posterior a eso se repite el estilo
+    */
+}
+
+.box{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2); /*Generar sombras por fuera son por defecto(inner) para que cambiar esto utilizamos inset */
+    /*transform: rotate(-45deg);    -> Para girar el elemento
+    transform: translate(50px, 10px);   ->para mover en eje X e Y (x,y)
+    transform: skew(25deg,10deg); torcer un objeto en el eje X y Y (x,y) */
+    transition: 1s;
+    transition-delay: 0.3s;
+
+}
+
+.box:hover{
+    transform: scale(1.05,1.05);/* -> Para redimensionar el objeto en X e Y (x,y)
+    transform: scaleY(); -> redimensionar solo eje X
+    transform: scaleX(); -> redimensionar solo eje Y*/
+    width: 150px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.text{
+    color: white;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0 ,0.3);
+
+
+}
