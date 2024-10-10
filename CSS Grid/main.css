@@ -1,0 +1,55 @@
+body{
+    background-color: #eee;
+}
+
+
+.grid{
+    display: grid; /*Este puede tomar el valor Inline-grid para que el ancho se ajuste al elemento que más espacio ocupe o solamente grid para ocupar todo el espacio*/
+    /*grid-template-rows: 90px 50px 100px; Aqui definimos la altura de las filas, en caso de no entregar valor la fola toma el valor por defecto. */
+    /*grid-template-columns: 90px 50px 120px;*/
+    /*grid-template-rows: minmax(100px,auto) ; 
+    grid-template-columns: minmax(auto,50%) 1fr 3em;*/
+    /*grid-template-rows: repeat(2,50px);
+    grid-template-columns: repeat(3,1fr);*/
+    /* grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 50px [row-3-fin]; Los valores entre [] son los nombres que le asignas a cada fila y columna para utilizarlo más adelanbte
+    grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-fin];*/
+    grid-template-areas: "header header"
+                        "Content Sidebar"
+                        "Footer Footer";
+    /*grid-template-rows: repeat(2,[row-inicio] 50px [row-fin]);
+    grid-template-columns: repeat(3,[col-inicio] 1fr [col-fin]);*/
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px; /*Dimensiones o template de aquellas filas que no hemos definidos anteriormente*/
+    grid-auto-flow: row; /*Definir como apareceran aquellos elementos que no estan definidos como columnas o filas*/
+    justify-items: auto;
+    align-items: auto;
+
+    /* grid-row-gap: 20px;  Agregar espacio entre las filas
+    grid-column-gap: 10px; Agregar espacio entre las columnas*/
+    /*grid-gap 20px 10px Agregar espacio entre filas y columnas*/
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}*/
+
+.header{
+    grid-column: col-inicio / col-fin 3 ;
+    /*rid-column-start: 1 ;
+    grid-column-end: 6;*/
+
+    grid-row: row-inicio / row-fin 3 ;
+   /* grid-row-start: 1;
+    grid-row-end: 3;*/
+}
+
+.item1{
+    background-color: green;
+    justify-self: start ; /*Alinear solamente los elementos que tengan esta etiqueta*/
+    align-self: start;
+}
